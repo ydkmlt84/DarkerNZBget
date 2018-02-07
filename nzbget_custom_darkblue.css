@@ -56,10 +56,10 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
     background-color: #3a87ad;
 }
 .table thead th a{
-  color: white;
+  color: #adb1b1;
 }
 .table thead th {
-  color:white;
+  color:#adb1b1;
   padding:8px;
   border-radius: 0px;
 }
@@ -71,7 +71,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   color:black;
 }
 td.dropdown-cell {
-  color:white;
+  color:#adb1b1;
 }
 thead{
   background:#414141;
@@ -86,7 +86,7 @@ thead{
 }
 tbody {
   background-color: transparent;
-  color:white;
+  color:#adb1b1;
   border: .5px solid white;
 }
 .table {
@@ -108,7 +108,7 @@ tbody {
      border:0px;
      background-color:#414141;
      text-shadow:unset;
-     color:white;
+     color:#adb1b1;
      text-transform:capitalize;
      box-shadow: 1px 1px #3a87ad;
    }
@@ -125,17 +125,17 @@ div.check {
     background-color: transparent;
 }
 .table a {
-  color: white;
+  color: #adb1b1;
 }
 .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
     background-color: transparent;
-    color:white;
+    color:#adb1b1;
 }
 .table a:hover {
-  color:white;
+  color:#adb1b1;
 }
 .td {
-  color: white;
+  color: #adb1b1;
 }
 .tr {
   background: transparent;
@@ -196,7 +196,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   font-weight:bold;
 }
 .modal-body p {
-  color:whitesmoke;
+  color:#adb1b1;
 }
 .modal-body h1 {
   color:#2c2c2c
@@ -226,7 +226,7 @@ border-radius:5px;
 border: 1px solid #2c2c2c;
 }
 #RefreshMenu > li.menu-header {
-  color:white;
+  color:#adb1b1;
 }
 #RefreshMenu > li > a > table > tbody{
   border:0px;
@@ -252,7 +252,7 @@ border: 1px solid #2c2c2c;
   background-color:transparent;
 }
 .pagination a {
-  color:whitesmoke;
+  color:#adb1b1;
   border:unset;
 }
 .pagination .disabled span, .pagination .disabled a, .pagination .disabled a:hover{
@@ -282,7 +282,7 @@ span.help-option-title {
 #_Unpack_Password{
   background-color:#414141;
   border:0px;
-  color:white;
+  color:#adb1b1;
 }
 .row-fluid .span9 {
     background-color: #2c2c2c;
@@ -296,7 +296,7 @@ span.help-option-title {
   text-shadow:unset;
 }
 #ConfigNav.nav-list a:hover {
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
   background-color:#0088cc
 }
@@ -322,21 +322,21 @@ span.help-option-title {
   border-bottom: 2px solid #eeeeee;
 }
 #ConfigContent .control-label {
-  color:whitesmoke;
+  color:#adb1b1;
 }
 .config-header .btn-group {
   padding-right:5px;
 }
 #ConfigContent p.help-block {
-  color:white;
+  color:#adb1b1;
   text-transform:capitalize;
 }
 #ConfigContent .help-option-title {
-  color:whitesmoke;
+  color:#adb1b1;
   text-transform:uppercase;
 }
 #ConfigContent .editlarge {
-    background: #626262;
+    background: #626261;
     color: white;
     border:0px;
 }
@@ -368,7 +368,6 @@ span.help-option-title {
 #ConfigData > div > div > div > span > label.checkbox {
   color:white;
 }
-
 #ConfigContent table.editor input {
     width: 100%;
     background-color: #626262;
@@ -378,6 +377,18 @@ span.help-option-title {
 #ConfigData > div > div > table {
   border-collapse:unset;
 }
+.config-header .btn{
+  background:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  }
+  #Config_ViewMenu {
+  background:transparent;
+  background-color:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  border:0px;
+}
 #UpdateDialog_Versions #UpdateDialog_AvailRow td:hover, #UpdateDialog_Versions tr:hover td {
     background-color: transparent;
 }
@@ -385,7 +396,7 @@ span.help-option-title {
   background:#414141;
 }
 #PlayMenu > li{
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
   font-weight:bold;
   font-size:12px;
@@ -394,19 +405,19 @@ span.help-option-title {
   border:0px;
 }
 .dropdown-menu a{
-  color:white;
+  color:#adb1b1;
   background:transparent;
 }
 div.toolbox-length select {
     width: 75px;
     height: 28px;
     background-color: #414141;
-    color: white;
+    color: #adb1b1;
     border: 0px;
 }
 #DownloadsToolbar > div > button {
   background:#414141;
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
 }
 #DownloadsToolbar > div > button:hover {
@@ -416,7 +427,7 @@ div.toolbox-length select {
 }
 #HistoryTab_Toolbar > div > button {
   background:#414141;
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
 }
 #HistoryTab_Toolbar > div > button:hover {
@@ -427,12 +438,12 @@ div.toolbox-length select {
 }
 .badge {
   background-color:#626262;
-  color:white;
+  color:#adb1b1;
   border-radius:4px;
 }
 #MessagesTab_Toolbar > div > button{
   background:#414141;
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
 }
 #MessagesTab_Toolbar > div > button:hover{
@@ -441,20 +452,8 @@ div.toolbox-length select {
   font-weight:bold;
   text-shadow:unset;
 }
-.config-header .btn{
-  background:#414141;
-  color:white;
-  text-shadow:unset;
-  }
-  #Config_ViewMenu {
-  background:transparent;
-  background-color:#414141;
-  color:white;
-  text-shadow:unset;
-  border:0px;
-}
 .menu-header {
-  color:white;
+  color:#adb1b1;
   text-shadow:unset;
 }
 #HistoryTab_Toolbar > div.btn-group.open > ul{
@@ -465,4 +464,9 @@ div.toolbox-length select {
 }
 #FilterMenu {
   background:#414141;
+}
+#Notif_Downloads_Select{
+  background:#2c2c2c;
+  color:#adb1b1;
+  border:0px;
 }

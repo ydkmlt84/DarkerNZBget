@@ -16,7 +16,9 @@ a reverse proxy block in NGINX to apply.
         }
 
 ```
-<b>Rawgit link for master branch = `https://rawgit.com/ydkmlt84/DarkerNZBget/master/nzbget_custom_darkblue.css`</b>
+<br>
+<i>Rawgit link for master branch = `https://rawgit.com/ydkmlt84/DarkerNZBget/master/nzbget_custom_darkblue.css`</i>
+<i>Rawgit link for develop branch = `https://rawgit.com/ydkmlt84/DarkerNZBget/develop/nzbget_custom_darkblue.css`</i>
 <br>
 <b> Screenshots</b>
 </br>

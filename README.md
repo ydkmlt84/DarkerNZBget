@@ -16,10 +16,10 @@ a reverse proxy block in NGINX to apply.
         }
 
 ```
+<b>Rawgit link for master branch = `https://rawgit.com/ydkmlt84/DarkerNZBget/master/nzbget_custom_darkblue.css`</b>
 <br>
 <b> Screenshots</b>
 </br>
 <img src="https://i.imgur.com/tXFSyAw.png"></img>
 <br>
 <img src="https://i.imgur.com/oSichzz.png"></img>
-

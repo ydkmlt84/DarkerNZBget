@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+body {
+background-color: #272727 !important;
+background-image: url("https://i.imgur.com/TYh5E3n.png");
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: top;
+color:#adb1b1 !important;
+text-transform: uppercase;
+}
+body::-webkit-scrollbar {
+  width:.6em;
+  background-color:transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #626262;
+  -webkit-border-radius:5px;
+}
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    border-radius: 3px;
+    background: transparent;
+    border: 0px;
+    color: #3a87ad;
+    font-size:13px;
+    font-weight:bold;
+    border-radius:2px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform:uppercase;
+}
+.navbar .nav > li > a {
+    color: #626262;
+    font-size: 13px;
+    font-weight:bold;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform:uppercase;
+}
+.navbar .nav > li > a:hover {
+    color: #3a87ad;
+    font-size: 13px;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-transform:uppsercase;
+   }
+
+#NavLinks .badge.badge2 {
+    background: #626262;
+    border-radius:5px;
+    font-size:12px;
+}
+#NavLinks .badge{
+  background:#626262;
+  border-radius:5px;
+  font-size:12px;
+}
+tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
+    background-color: #3a87ad;
+}
+.table thead th a{
+  color: white;
+}
+.table thead th {
+  color:white;
+  padding:8px;
+  border-radius: 0px;
+}
+.btn {
+  text-transform: uppercase;
+  font-family:'Nanum Gothic', sans-serif;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+  color:black;
+}
+td.dropdown-cell {
+  color:white;
+}
+thead{
+  background:#414141;
+}
+
+#DownloadsTab thead{
+   background-color: #414141;
+  box-shadow: 1px 1px #3a87ad;
+  border-top-right-radius:3px;
+}
+
+}
+tbody {
+  background-color: transparent;
+  color:white;
+  border: .5px solid white;
+}
+.table {
+    border-radius: unset;
+    border: none;
+}
+.navbar-search .search-query, .navbar-search .search-query:focus, .navbar-search .search-query.focused {
+    width: 180px;
+    border-radius: 2px;
+  }
+  .navbar .dropdown-menu:after{
+        border-bottom: 6px solid #414141;
+  }
+  .alert-info {
+     font-weight: bold;
+     border-radius: unset;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+     border:0px;
+     background-color:#414141;
+     text-shadow:unset;
+     color:white;
+     text-transform:capitalize;
+     box-shadow: 1px 1px #3a87ad;
+   }
+   .alert-info h4 {
+     text-transform:uppercase;
+   }
+    div.check:hover {
+    border: 1px solid black;
+}
+div.check {
+  background-color: white !important;
+}
+.table-striped tbody tr.checked:nth-child(odd) td, .checked .progress {
+    background-color: transparent;
+}
+.table a {
+  color: white;
+}
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+    background-color: transparent;
+    color:white;
+}
+.table a:hover {
+  color:white;
+}
+.td {
+  color: white;
+}
+.tr {
+  background: transparent;
+}
+
+.table tbody tr:hover td, .table tbody tr:hover th {
+    background-color: transparent;
+}
+.table tbody tr:hover td, .table tbody tr th {
+    background-color: transparent;
+}
+
+.table-striped tbody tr:nth-child(odd) {
+    background-color: transparent;
+}
+tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
+    background-color: transparent;
+}
+.table tbody tr.checked:hover, .table tbody tr.checked:hover td {
+    background-color: transparent;
+}
+.table tbody tr:hover, .table tbody tr:hover td {
+    background-color: transparent;
+}
+.modal-body {
+  background-color: #3a87ad;
+  color:#333333;
+}
+.modal-body::-webkit-scrollbar {
+  width:.6em;
+  background-color:transparent;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #626262;
+  -webkit-border-radius:5px;
+}
+.modal-header h3 {
+  color:#414141;
+  background-color:#3a87ad;
+}
+.modal-header {
+  background-color:#3a87ad;
+  border-bottom:3px solid #414141;
+}
+.modal-footer {
+  background-color:#3a87ad;
+  border-top:3px solid #414141;
+  box-shadow:unset;
+}
+
+.modal {
+  background-color: #3a87ad;
+  border:5px solid #2c2c2c;
+}
+.modal-body .form-horizontal .control-label{
+  color:#414141;
+  font-weight:bold;
+}
+.modal-body p {
+  color:whitesmoke;
+}
+.modal-body h1 {
+  color:#2c2c2c
+}
+.modal-body h2 {
+  color:#414141;
+}
+.modal-body p a {
+  color: #414141;
+  text-decoration:underline
+}
+.modal-body .table thead th {
+    color: #414141;
+    font-weight:bold;
+    padding: 10px;
+}
+.table.check-simple tbody tr.checked:hover, .table.check-simple tbody tr.checked:hover td {
+    background-color: transparent;
+    cursor:default;
+}
+table > thead > tr > th.table-selector {
+  color:black;
+}
+#RefreshMenu  {
+background-color:#414141;
+border-radius:5px;
+border: 1px solid #2c2c2c;
+}
+#RefreshMenu > li.menu-header {
+  color:white;
+}
+#RefreshMenu > li > a > table > tbody{
+  border:0px;
+}
+.progress-block {
+  color:black;
+  border-radius:3px;
+  background-color:rgba(255,255,255, .2)
+}
+.progress {
+  background:#2c2c2c;
+}
+#DownloadsTable > tbody > tr > td:nth-child(7) > div > div.progress.progress-striped.progress-none{
+  background-color:transparent;
+}
+#DownloadsTable > tbody > tr.checked >td:nth-child(7) >div >div.progress{
+  background-color:rgba(248, 148, 6, .8);
+}
+#DownloadsTable > tbody > tr > td:nth-child(7) > div > div.progress{
+  background-color:rgba(248, 148, 6, .8);
+}
+#DownloadsTable > tbody > tr > td:nth-child(7) > div > div.progress.progress-striped.progress-success{
+  background-color:transparent;
+}
+.pagination a {
+  color:whitesmoke;
+  border:unset;
+}
+.pagination .disabled span, .pagination .disabled a, .pagination .disabled a:hover{
+  color:#414141;
+}
+.pagination a:hover {
+  color:#3a87ad;
+  background:transparent;
+  font-weight:bold;
+  border-radius: 4px;
+}
+.pagination li:first-child a:hover{
+  background:transparent;
+}
+.pagination li:last-child a:hover{
+  background:transparent;
+}
+.pagination .active a{
+  color:#3a87ad;
+  font-weight:bold;
+  background-color:transparent;
+  border-radius:4px;
+}
+span.help-option-title {
+    color: #bbbbbb;
+}
+#_Unpack_Password{
+  background-color:#414141;
+  border:0px;
+  color:white;
+}
+.row-fluid .span9 {
+    background-color: #2c2c2c;
+    background-color: rgba(44,44,44,.75);
+    border-radius: 3px;
+    border: 1px solid #414141;
+    padding: 2px;
+}
+#ConfigNav.nav-list a {
+  color:#adb1b1;
+  text-shadow:unset;
+}
+#ConfigNav.nav-list a:hover {
+  color:white;
+  text-shadow:unset;
+  background-color:#0088cc
+}
+#ConfigNav {
+  background:#2c2c2c;
+  background-color: rgba(44,44,44,.75);
+  border: 1px solid #414141;
+}
+.row-fluid .span9 p{
+    padding-left: 2px;
+}
+.row-fluid .span9 h4{
+    padding-left: 2px;
+}
+#ConfigContent .config-header{
+  border-radius:0px;
+  border-bottom: 2px solid #eeeeee;
+}
+#ConfigContent hr {
+  border:0px;
+}
+#ConfigContent div.control-group {
+  border-bottom: 2px solid #eeeeee;
+}
+#ConfigContent .control-label {
+  color:whitesmoke;
+}
+.config-header .btn-group {
+  padding-right:5px;
+}
+#ConfigContent p.help-block {
+  color:white;
+  text-transform:capitalize;
+}
+#ConfigContent .help-option-title {
+  color:whitesmoke;
+  text-transform:uppercase;
+}
+#ConfigContent .editlarge {
+    background: #626262;
+    color: white;
+    border:0px;
+}
+#ConfigContent .editsmall {
+    background: #626262;
+    color: white;
+    border:0px;
+}
+.config-settitle {
+  background-color: transparent;
+  border-radius:0px;
+  text-shadow: 2px 1px 1px #0088cc;
+  border-bottom:0px;
+  }
+#ConfigContent .editnumeric {
+    width: 70px;
+    background: #626261;
+    color: white;
+    border:0px;
+}
+#ConfigData > div > div > div > span.add-on{
+  background-color:#414141;
+  color:white;
+  text-shadow:unset;
+  font-weight:bold;
+  cursor:default;
+  border:0px;
+}
+#ConfigData > div > div > div > span > label.checkbox {
+  color:white;
+}
+
+#ConfigContent table.editor input {
+    width: 100%;
+    background-color: #626262;
+    color: white;
+    border:0px;
+}
+#ConfigData > div > div > table {
+  border-collapse:unset;
+}
+#UpdateDialog_Versions #UpdateDialog_AvailRow td:hover, #UpdateDialog_Versions tr:hover td {
+    background-color: transparent;
+}
+#PlayMenu {
+  background:#414141;
+}
+#PlayMenu > li{
+  color:white;
+  text-shadow:unset;
+  font-weight:bold;
+  font-size:12px;
+}
+#PlayMenu > li > a > table > tbody{
+  border:0px;
+}
+.dropdown-menu a{
+  color:white;
+  background:transparent;
+}
+div.toolbox-length select {
+    width: 75px;
+    height: 28px;
+    background-color: #414141;
+    color: white;
+    border: 0px;
+}
+#DownloadsToolbar > div > button {
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+}
+#DownloadsToolbar > div > button:hover {
+  background:#414141;
+  color:#3a87ad;
+  text-shadow:unset;
+}
+#HistoryTab_Toolbar > div > button {
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+}
+#HistoryTab_Toolbar > div > button:hover {
+  background:#414141;
+  color:#3a87ad;
+  text-shadow:unset;
+  font-weight:bold;
+}
+.badge {
+  background-color:#626262;
+  color:white;
+  border-radius:4px;
+}
+#MessagesTab_Toolbar > div > button{
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+}
+#MessagesTab_Toolbar > div > button:hover{
+  background:#414141;
+  color:#3a87ad;
+  font-weight:bold;
+  text-shadow:unset;
+}
+.config-header .btn{
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+  }
+  #Config_ViewMenu {
+  background:transparent;
+  background-color:#414141;
+  color:white;
+  text-shadow:unset;
+  border:0px;
+}
+.menu-header {
+  color:white;
+  text-shadow:unset;
+}
+#HistoryTab_Toolbar > div.btn-group.open > ul{
+  background:#414141
+}
+#HistoryActionsMenu {
+  background:#414141
+}
+#FilterMenu {
+  background:#414141;
+}

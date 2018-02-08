@@ -97,6 +97,9 @@ tbody {
 .navbar-search .search-query, .navbar-search .search-query:focus, .navbar-search .search-query.focused {
     width: 180px;
     border-radius: 2px;
+    background-color: #414141;
+    text-shadow: unset;
+    color: #a8a8a8;
   }
   .navbar .dropdown-menu:after{
         border-bottom: 6px solid #414141;

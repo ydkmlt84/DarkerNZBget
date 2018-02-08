@@ -422,8 +422,9 @@ div.toolbox-length select {
 }
 #DownloadsToolbar > div > button:hover {
   background:#414141;
-  color:#3a87ad;
+  color:white;
   text-shadow:unset;
+  box-shadow:1px 1px #3a87ad;
 }
 #HistoryTab_Toolbar > div > button {
   background:#414141;
@@ -432,12 +433,13 @@ div.toolbox-length select {
 }
 #HistoryTab_Toolbar > div > button:hover {
   background:#414141;
-  color:#3a87ad;
+  color:white;
   text-shadow:unset;
-  font-weight:bold;
+  box-shadow:1px 1px #3a87ad;
+
 }
 .badge {
-  background-color:rgba(0,0,0,.8);
+  background-color: rgb(98, 98, 98);
   color:white;
   border-radius:4px;
 }
@@ -469,4 +471,18 @@ div.toolbox-length select {
   background:#2c2c2c;
   color:#adb1b1;
   border:0px;
+}
+#HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse{
+  box-shadow:1px 1px #3a87ad;
+  color:#3a87ad;
+}
+#HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse:hover{
+  font-weight:initial;
+}
+#MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse{
+  box-shadow:1px 1px #3a87ad;
+  color:#3a87ad;
+}
+#MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse:hover {
+  font-weight:initial;
 }

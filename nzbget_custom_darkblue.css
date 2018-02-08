@@ -75,15 +75,12 @@ td.dropdown-cell {
 }
 thead{
   background:#414141;
-  box-shadow: 1px 1px #3a87ad;
 }
 
 #DownloadsTab thead{
    background-color: #414141;
   box-shadow: 1px 1px #3a87ad;
   border-top-right-radius:3px;
-}
-
 }
 tbody {
   background-color: transparent;
@@ -100,6 +97,7 @@ tbody {
     background-color: #414141;
     text-shadow: unset;
     color: #a8a8a8;
+    border:0px;
   }
   .navbar .dropdown-menu:after{
         border-bottom: 6px solid #414141;
@@ -114,7 +112,6 @@ tbody {
      text-shadow:unset;
      color:#adb1b1;
      text-transform:capitalize;
-     box-shadow: 1px 1px #3a87ad;
    }
    .alert-info h4 {
      text-transform:uppercase;

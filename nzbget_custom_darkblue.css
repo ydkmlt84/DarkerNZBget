@@ -418,25 +418,37 @@ div.toolbox-length select {
 }
 #DownloadsToolbar > div > button {
   background:#414141;
-  color:white;
+  color:#a8a8a8;
   text-shadow:unset;
 }
 #DownloadsToolbar > div > button:hover {
   background:#414141;
+  color:#a8a8a8;
+  text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
+}
+#DownloadsToolbar > div > button:active {
+  background:#414141;
   color:white;
   text-shadow:unset;
-  box-shadow:1px 1px #3a87ad;
+  border-bottom:1px solid #3a87ad;
 }
 #HistoryTab_Toolbar > div > button {
   background:#414141;
-  color:white;
+  color:#a8a8a8;
   text-shadow:unset;
 }
 #HistoryTab_Toolbar > div > button:hover {
   background:#414141;
+  color:#a8a8a8;
+  text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
+}
+#HistoryTab_Toolbar > div > button:active {
+  background:#414141;
   color:white;
   text-shadow:unset;
-  box-shadow:1px 1px #3a87ad;
+  border-bottom:1px solid #3a87ad;
 }
 #HistoryCategoryMenu{
   background:#414141;
@@ -448,14 +460,20 @@ div.toolbox-length select {
 }
 #MessagesTab_Toolbar > div > button{
   background:#414141;
-  color:white;
+  color:#a8a8a8;
   text-shadow:unset;
 }
 #MessagesTab_Toolbar > div > button:hover{
   background:#414141;
+  color:#a8a8a8;
+  text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
+}
+#MessagesTab_Toolbar > div > button:active{
+  background:#414141;
   color:white;
   text-shadow:unset;
-  box-shadow:1px 1px #3a87ad;
+  border-bottom:1px solid #3a87ad;
 }
 .menu-header {
   color:white;
@@ -476,16 +494,10 @@ div.toolbox-length select {
   border:0px;
 }
 #HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse{
-  box-shadow:1px 1px #3a87ad;
+  border-bottom:1px solid #3a87ad;
   color:white;
-}
-#HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse:hover{
-  font-weight:initial;
 }
 #MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse{
-  box-shadow:1px 1px #3a87ad;
+  border-bottom:1px solid #3a87ad;
   color:white;
-}
-#MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse:hover {
-  font-weight:initial;
 }

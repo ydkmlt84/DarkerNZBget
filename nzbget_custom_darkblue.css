@@ -75,6 +75,7 @@ td.dropdown-cell {
 }
 thead{
   background:#414141;
+  box-shadow: 1px 1px #3a87ad;
 }
 
 #DownloadsTab thead{
@@ -436,8 +437,10 @@ div.toolbox-length select {
   color:white;
   text-shadow:unset;
   box-shadow:1px 1px #3a87ad;
-
 }
+#HistoryCategoryMenu{
+  background:#414141;
+  }
 .badge {
   background-color: rgb(98, 98, 98);
   color:white;
@@ -450,9 +453,9 @@ div.toolbox-length select {
 }
 #MessagesTab_Toolbar > div > button:hover{
   background:#414141;
-  color:#3a87ad;
-  font-weight:bold;
+  color:white;
   text-shadow:unset;
+  box-shadow:1px 1px #3a87ad;
 }
 .menu-header {
   color:white;
@@ -474,14 +477,14 @@ div.toolbox-length select {
 }
 #HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse{
   box-shadow:1px 1px #3a87ad;
-  color:#3a87ad;
+  color:white;
 }
 #HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse:hover{
   font-weight:initial;
 }
 #MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse{
   box-shadow:1px 1px #3a87ad;
-  color:#3a87ad;
+  color:white;
 }
 #MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse:hover {
   font-weight:initial;

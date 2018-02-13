@@ -1,4 +1,4 @@
-# DarkerNZBget
+# DarkerNZBget</br>
 [![Discord](https://img.shields.io/badge/Chat-Discord-738bd7.svg?style=for-the-badge)](https://discord.gg/Nr4U9D)
 Custom CSS to apply to NZBget using an NGINX subfilter
 

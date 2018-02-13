@@ -1,5 +1,5 @@
 # DarkerNZBget
-[![Discord](https://img.shields.io/badge/Chat-Discord-738bd7.svg?style=for-the-badge)](https://discord.gg/Nr4U9D)<br>
+[![Discord](https://img.shields.io/badge/Chat-Discord-738bd7.svg?style=for-the-badge)](https://discord.gg/fKcCXwb)<br>
 Custom CSS to apply to NZBget using an NGINX subfilter
 
 As far as I know, a NGINX sub filter is the only way to apply this to NZBget. Below is one example of how to use

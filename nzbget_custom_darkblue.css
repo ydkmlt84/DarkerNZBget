@@ -29,7 +29,7 @@ body::-webkit-scrollbar-thumb {
     text-transform:uppercase;
 }
 .navbar .nav > li > a {
-    color: #626262;
+    color: #a8a8a8;
     font-size: 13px;
     font-weight:bold;
     font-family: 'Nanum Gothic', sans-serif;
@@ -56,10 +56,10 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
     background-color: #3a87ad;
 }
 .table thead th a{
-  color: white;
+  color: #a8a8a8;
 }
 .table thead th {
-  color:white;
+  color:#a8a8a8;
   padding:8px;
   border-radius: 0px;
 }
@@ -71,7 +71,7 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   color:black;
 }
 td.dropdown-cell {
-  color:white;
+  color:#adb1b1;
 }
 thead{
   background:#414141;
@@ -79,14 +79,10 @@ thead{
 
 #DownloadsTab thead{
    background-color: #414141;
-  box-shadow: 1px 1px #3a87ad;
-  border-top-right-radius:3px;
-}
-
 }
 tbody {
   background-color: transparent;
-  color:white;
+  color:#adb1b1;
   border: .5px solid white;
 }
 .table {
@@ -96,6 +92,10 @@ tbody {
 .navbar-search .search-query, .navbar-search .search-query:focus, .navbar-search .search-query.focused {
     width: 180px;
     border-radius: 2px;
+    background-color: #414141;
+    text-shadow: unset;
+    color: #a8a8a8;
+    border:0px;
   }
   .navbar .dropdown-menu:after{
         border-bottom: 6px solid #414141;
@@ -108,9 +108,8 @@ tbody {
      border:0px;
      background-color:#414141;
      text-shadow:unset;
-     color:white;
+     color:#adb1b1;
      text-transform:capitalize;
-     box-shadow: 1px 1px #3a87ad;
    }
    .alert-info h4 {
      text-transform:uppercase;
@@ -125,17 +124,17 @@ div.check {
     background-color: transparent;
 }
 .table a {
-  color: white;
+  color: #adb1b1;
 }
 .table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
     background-color: transparent;
-    color:white;
+    color:#adb1b1;
 }
 .table a:hover {
-  color:white;
+  color:#adb1b1;
 }
 .td {
-  color: white;
+  color: #adb1b1;
 }
 .tr {
   background: transparent;
@@ -161,8 +160,8 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
     background-color: transparent;
 }
 .modal-body {
-  background-color: #3a87ad;
-  color:#333333;
+  background-color: #414141;
+  color:#cccccc;
 }
 .modal-body::-webkit-scrollbar {
   width:.6em;
@@ -174,45 +173,144 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   -webkit-border-radius:5px;
 }
 .modal-header h3 {
-  color:#414141;
-  background-color:#3a87ad;
+  color:#cccccc;
+  background-color:#414141;
 }
 .modal-header {
-  background-color:#3a87ad;
-  border-bottom:3px solid #414141;
+  background-color:#414141;
+  border:0px;
 }
 .modal-footer {
-  background-color:#3a87ad;
-  border-top:3px solid #414141;
+  background-color:#414141;
+  border-top:1px solid #adb1b1;
   box-shadow:unset;
 }
-
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    background:#3a87ad;
+    margin-left: 5px;
+}
 .modal {
-  background-color: #3a87ad;
-  border:5px solid #2c2c2c;
+  background-color: #414141;
+  border:0px;
+}
+.modal a.btn{
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+}
+#LimitDialog_SpeedInput{
+  background:#2c2c2c;
+  border:0px;
+  color: white;
+}
+#LimitDialog_SpeedInputGroup > div > span{
+  background:#414141;
+  border:1px solid #2c2c2c;
+  text-shadow:unset;
+  font-weight:bold;
+  cursor:default;
+}
+.modal .input-xlarge {
+    color:white;
+    border:0px;
+    background:#2c2c2c
+}
+#HistoryEdit_Category{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+.modal-bottom-toolbar .btn{
+  background:#2c2c2c;
+  color:white;
+  text-shadow:unset;
 }
 .modal-body .form-horizontal .control-label{
-  color:#414141;
+  color: #CCCCCC;
   font-weight:bold;
 }
 .modal-body p {
-  color:whitesmoke;
+  color:#adb1b1;
 }
 .modal-body h1 {
-  color:#2c2c2c
+  color:#adb1b1;
 }
 .modal-body h2 {
-  color:#414141;
+  color:#cccccc;
 }
 .modal-body p a {
-  color: #414141;
-  text-decoration:underline
+  color: #3a87ad;
+  text-decoration:underline;
 }
 .modal-body .table thead th {
-    color: #414141;
+    color: #cccccc;
     font-weight:bold;
     padding: 10px;
 }
+.modal .input-small{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#HistoryEdit_DupeTab > div > form > fieldset > div > div > label{
+  color:#cccccc;
+}
+#HistoryEdit_LogTab > div> div.btn-toolbar.form-inline.clearfix.modal-toolbox > div.pull-left.btn-group > button{
+  background:#2c2c2c;
+  color:white;
+  text-shadow:unset;
+  font-weight:bold;
+}
+.modal div.toolbox-length select{
+  background:#2c2c2c;
+}
+#HistoryEdit_LogTable_filter{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+  border-radius:4px;
+}
+.modal .btn.btn-primary{
+  background:#3a87ad;
+  color:#2c2c2c;
+  text-shadow:unset;
+}
+.modal .btn{
+  background: #414141;
+  color:#cccccc;
+  text-shadow:unset;
+}
+.modal .input-medium{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+.modal .input-xblarge{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Priority{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Category{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Target > div > form > fieldset > div > div > label{
+  color:#cccccc;
+}
+.modal .radio{
+  color:#cccccc;
+}
+.modal .radio:hover{
+  color:#3a87ad;
+}
+/*end of modal*/
 .table.check-simple tbody tr.checked:hover, .table.check-simple tbody tr.checked:hover td {
     background-color: transparent;
     cursor:default;
@@ -252,7 +350,7 @@ border: 1px solid #2c2c2c;
   background-color:transparent;
 }
 .pagination a {
-  color:whitesmoke;
+  color:#adb1b1;
   border:unset;
 }
 .pagination .disabled span, .pagination .disabled a, .pagination .disabled a:hover{
@@ -280,30 +378,41 @@ span.help-option-title {
     color: #bbbbbb;
 }
 #_Unpack_Password{
-  background-color:#414141;
+  background-color:#2c2c2c;
   border:0px;
   color:white;
 }
 .row-fluid .span9 {
-    background-color: #2c2c2c;
     background-color: rgba(44,44,44,.75);
     border-radius: 3px;
-    border: 1px solid #414141;
     padding: 2px;
+    margin:auto;
 }
 #ConfigNav.nav-list a {
-  color:#adb1b1;
+  color:#a8a8a8;
   text-shadow:unset;
 }
 #ConfigNav.nav-list a:hover {
+   color:#3a87ad;
+   background-color:transparent;
+}
+#ConfigNav.nav-list a:active {
   color:white;
   text-shadow:unset;
-  background-color:#0088cc
+  background-color:transparent;
+  border-radius:2px;
+}
+#ConfigNav.nav-list > .active > a, #ConfigNav.nav-list > .active > a:hover {
+  color:white;
+  border-radius:2px;
+  background-color:rgba(58,135,173,.7);
 }
 #ConfigNav {
-  background:#2c2c2c;
-  background-color: rgba(44,44,44,.75);
-  border: 1px solid #414141;
+  background-color: rgba(44,44,44,.7);
+  border:0px;
+  width:200px;
+  text-align:center;
+  margin:auto;
 }
 .row-fluid .span9 p{
     padding-left: 2px;
@@ -313,30 +422,31 @@ span.help-option-title {
 }
 #ConfigContent .config-header{
   border-radius:0px;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #a8a8a8;
 }
 #ConfigContent hr {
   border:0px;
 }
 #ConfigContent div.control-group {
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 1px solid #a8a8a8;
 }
 #ConfigContent .control-label {
-  color:whitesmoke;
+  color:#adb1b1;
 }
 .config-header .btn-group {
   padding-right:5px;
 }
 #ConfigContent p.help-block {
-  color:white;
+  color:#adb1b1;
   text-transform:capitalize;
 }
 #ConfigContent .help-option-title {
-  color:whitesmoke;
+  color:#adb1b1;
   text-transform:uppercase;
+  font-weight: bold;
 }
 #ConfigContent .editlarge {
-    background: #626262;
+    background: #626261;
     color: white;
     border:0px;
 }
@@ -368,7 +478,6 @@ span.help-option-title {
 #ConfigData > div > div > div > span > label.checkbox {
   color:white;
 }
-
 #ConfigContent table.editor input {
     width: 100%;
     background-color: #626262;
@@ -377,6 +486,56 @@ span.help-option-title {
 }
 #ConfigData > div > div > table {
   border-collapse:unset;
+}
+.config-header .btn{
+  background:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  }
+  .nav-list .divider{
+    border-bottom:2px solid #a8a8a8;
+    background-color:transparent;
+  }
+  #Config_ViewMenu {
+  background:transparent;
+  background-color:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  border:0px;
+}
+#Config_Save {
+  background:#414141;
+  font-family:'Nanum-Gothic', sans-serif;
+  color:#a8a8a8;
+  margin:auto;
+}
+#ConfigData > div> div > button.btn.btn-danger {
+  background:#ad292c;
+  text-shadow:unset;
+}
+#ConfigData > div:nth-child(3) > div > button,
+#ConfigData > div:nth-child(4) > div > button,
+#ConfigData > div:nth-child(5) > div > button {
+  text-shadow:unset;
+  background:#414141;
+  color:white;
+}
+#ConfigData input.btn.btn-primary{
+  background:#3a87ad;
+  text-shadow:unset;
+  color:white;
+}
+#ConfigData input.btn{
+  background:#414141;
+  text-shadow:unset;
+  color:#a8a8a8;
+}
+#Config_ViewButton{
+  background:#414141;
+  color:#a8a8a8;
+}
+#ConfigData > div > div > p > a {
+  color:#3a87ad;
 }
 #UpdateDialog_Versions #UpdateDialog_AvailRow td:hover, #UpdateDialog_Versions tr:hover td {
     background-color: transparent;
@@ -394,64 +553,77 @@ span.help-option-title {
   border:0px;
 }
 .dropdown-menu a{
-  color:white;
+  color: #adb1b1;
   background:transparent;
 }
 div.toolbox-length select {
     width: 75px;
     height: 28px;
     background-color: #414141;
-    color: white;
+    color: #adb1b1;
     border: 0px;
 }
 #DownloadsToolbar > div > button {
   background:#414141;
-  color:white;
+  color:#a8a8a8;
   text-shadow:unset;
+  font-weight: bold;
 }
 #DownloadsToolbar > div > button:hover {
   background:#414141;
-  color:#3a87ad;
+  color:#a8a8a8;
   text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
 }
-#HistoryTab_Toolbar > div > button {
+#DownloadsToolbar > div > button:active {
   background:#414141;
   color:white;
   text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
+}
+#HistoryTab_Toolbar > div > button {
+  background:#414141;
+  color:#a8a8a8;
+  text-shadow:unset;
+  font-weight: bold;
 }
 #HistoryTab_Toolbar > div > button:hover {
   background:#414141;
-  color:#3a87ad;
+  color:#a8a8a8;
   text-shadow:unset;
-  font-weight:bold;
+  border-bottom:1px solid #3a87ad;
 }
+#HistoryTab_Toolbar > div > button:active {
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
+}
+#HistoryCategoryMenu{
+  background:#414141;
+  }
 .badge {
-  background-color:#626262;
+  background-color: rgb(98, 98, 98);
   color:white;
   border-radius:4px;
 }
 #MessagesTab_Toolbar > div > button{
   background:#414141;
-  color:white;
+  color:#a8a8a8;
   text-shadow:unset;
+  font-weight: bold;
 }
 #MessagesTab_Toolbar > div > button:hover{
   background:#414141;
-  color:#3a87ad;
-  font-weight:bold;
+  color:#a8a8a8;
   text-shadow:unset;
+  border-bottom:1px solid #3a87ad;
 }
-.config-header .btn{
+#MessagesTab_Toolbar > div > button:active{
   background:#414141;
   color:white;
   text-shadow:unset;
-  }
-  #Config_ViewMenu {
-  background:transparent;
-  background-color:#414141;
-  color:white;
-  text-shadow:unset;
-  border:0px;
+  border-bottom:1px solid #3a87ad;
 }
 .menu-header {
   color:white;
@@ -465,4 +637,51 @@ div.toolbox-length select {
 }
 #FilterMenu {
   background:#414141;
+}
+#Notif_Downloads_Select{
+  background:#2c2c2c;
+  color:#adb1b1;
+  border:0px;
+}
+#HistoryTab_Toolbar > div.btn-group.phone-hide > button.btn.history-filter.btn-inverse{
+  border-bottom:1px solid #3a87ad;
+  color:white;
+}
+#MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse{
+  border-bottom:1px solid #3a87ad;
+  color:white;
+}
+#ConfigData > div > button.btn{
+  background:#414141;
+  color:#adb1b1;
+  font-weight:bold;
+  text-shadow:unset;
+}
+#ConfigData > div > button.btn:hover{
+  background:#414141;
+  color:#3a87ad;
+  font-weight:bold;
+  text-shadow:unset;
+}
+.dropdown-menu a:hover {
+
+    color: #adb1b1;
+    background: transparent;
+    border-radius:2px;
+}
+#ConfigData > div > div > table > tbody > tr > td>.btn{
+  background:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  font-weight:bold;
+}
+#Config_Save:hover{
+  background-color:#ad292c;
+  color:#adb1b1;
+}
+#Notif_History_Select{
+  background:#2c2c2c;
+  border:1px solid #2c2c2c;
+  color:#adb1b1;
+
 }

@@ -310,6 +310,20 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
 .modal .radio:hover{
   color:#3a87ad;
 }
+.modal-open .dropdown-menu {
+    background: #414141;
+}
+#StatDialog_Server{
+  background:#414141;
+}
+.modal .input-mini{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+.modal .btn-inverse{
+  color:#3a87ad;
+}
 /*end of modal*/
 .table.check-simple tbody tr.checked:hover, .table.check-simple tbody tr.checked:hover td {
     background-color: transparent;

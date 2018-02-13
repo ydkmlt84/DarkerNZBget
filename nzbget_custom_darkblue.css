@@ -160,8 +160,8 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
     background-color: transparent;
 }
 .modal-body {
-  background-color: #3a87ad;
-  color:#333333;
+  background-color: #414141;
+  color:#cccccc;
 }
 .modal-body::-webkit-scrollbar {
   width:.6em;
@@ -173,45 +173,144 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
   -webkit-border-radius:5px;
 }
 .modal-header h3 {
-  color:#414141;
-  background-color:#3a87ad;
+  color:#cccccc;
+  background-color:#414141;
 }
 .modal-header {
-  background-color:#3a87ad;
-  border-bottom:3px solid #414141;
+  background-color:#414141;
+  border:0px;
 }
 .modal-footer {
-  background-color:#3a87ad;
-  border-top:3px solid #414141;
+  background-color:#414141;
+  border-top:1px solid #adb1b1;
   box-shadow:unset;
 }
-
+.modal-footer .btn + .btn {
+    margin-bottom: 0;
+    background:#3a87ad;
+    margin-left: 5px;
+}
 .modal {
-  background-color: #3a87ad;
-  border:5px solid #2c2c2c;
+  background-color: #414141;
+  border:0px;
+}
+.modal a.btn{
+  background:#414141;
+  color:white;
+  text-shadow:unset;
+}
+#LimitDialog_SpeedInput{
+  background:#2c2c2c;
+  border:0px;
+  color: white;
+}
+#LimitDialog_SpeedInputGroup > div > span{
+  background:#414141;
+  border:1px solid #2c2c2c;
+  text-shadow:unset;
+  font-weight:bold;
+  cursor:default;
+}
+.modal .input-xlarge {
+    color:white;
+    border:0px;
+    background:#2c2c2c
+}
+#HistoryEdit_Category{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+.modal-bottom-toolbar .btn{
+  background:#2c2c2c;
+  color:white;
+  text-shadow:unset;
 }
 .modal-body .form-horizontal .control-label{
-  color:#414141;
+  color: #CCCCCC;
   font-weight:bold;
 }
 .modal-body p {
   color:#adb1b1;
 }
 .modal-body h1 {
-  color:#2c2c2c
+  color:#adb1b1;
 }
 .modal-body h2 {
-  color:#414141;
+  color:#cccccc;
 }
 .modal-body p a {
-  color: #414141;
-  text-decoration:underline
+  color: #3a87ad;
+  text-decoration:underline;
 }
 .modal-body .table thead th {
-    color: #414141;
+    color: #cccccc;
     font-weight:bold;
     padding: 10px;
 }
+.modal .input-small{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#HistoryEdit_DupeTab > div > form > fieldset > div > div > label{
+  color:#cccccc;
+}
+#HistoryEdit_LogTab > div> div.btn-toolbar.form-inline.clearfix.modal-toolbox > div.pull-left.btn-group > button{
+  background:#2c2c2c;
+  color:white;
+  text-shadow:unset;
+  font-weight:bold;
+}
+.modal div.toolbox-length select{
+  background:#2c2c2c;
+}
+#HistoryEdit_LogTable_filter{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+  border-radius:4px;
+}
+.modal .btn.btn-primary{
+  background:#3a87ad;
+  color:#2c2c2c;
+  text-shadow:unset;
+}
+.modal .btn{
+  background: #414141;
+  color:#cccccc;
+  text-shadow:unset;
+}
+.modal .input-medium{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+.modal .input-xblarge{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Priority{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Category{
+  background:#2c2c2c;
+  color:white;
+  border:0px;
+}
+#AddDialog_Target > div > form > fieldset > div > div > label{
+  color:#cccccc;
+}
+.modal .radio{
+  color:#cccccc;
+}
+.modal .radio:hover{
+  color:#3a87ad;
+}
+/*end of modal*/
 .table.check-simple tbody tr.checked:hover, .table.check-simple tbody tr.checked:hover td {
     background-color: transparent;
     cursor:default;
@@ -279,7 +378,7 @@ span.help-option-title {
     color: #bbbbbb;
 }
 #_Unpack_Password{
-  background-color:#414141;
+  background-color:#2c2c2c;
   border:0px;
   color:white;
 }

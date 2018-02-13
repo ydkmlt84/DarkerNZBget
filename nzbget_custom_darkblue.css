@@ -344,6 +344,7 @@ span.help-option-title {
 #ConfigContent .help-option-title {
   color:#adb1b1;
   text-transform:uppercase;
+  font-weight: bold;
 }
 #ConfigContent .editlarge {
     background: #626261;
@@ -453,7 +454,7 @@ span.help-option-title {
   border:0px;
 }
 .dropdown-menu a{
-  color:#adb1b1;;
+  color: #adb1b1;
   background:transparent;
 }
 div.toolbox-length select {
@@ -467,6 +468,7 @@ div.toolbox-length select {
   background:#414141;
   color:#a8a8a8;
   text-shadow:unset;
+  font-weight: bold;
 }
 #DownloadsToolbar > div > button:hover {
   background:#414141;
@@ -484,6 +486,7 @@ div.toolbox-length select {
   background:#414141;
   color:#a8a8a8;
   text-shadow:unset;
+  font-weight: bold;
 }
 #HistoryTab_Toolbar > div > button:hover {
   background:#414141;
@@ -509,6 +512,7 @@ div.toolbox-length select {
   background:#414141;
   color:#a8a8a8;
   text-shadow:unset;
+  font-weight: bold;
 }
 #MessagesTab_Toolbar > div > button:hover{
   background:#414141;
@@ -547,4 +551,38 @@ div.toolbox-length select {
 #MessagesTab_Toolbar > div.btn-group.phone-hide > button.btn.btn-inverse{
   border-bottom:1px solid #3a87ad;
   color:white;
+}
+#ConfigData > div > button.btn{
+  background:#414141;
+  color:#adb1b1;
+  font-weight:bold;
+  text-shadow:unset;
+}
+#ConfigData > div > button.btn:hover{
+  background:#414141;
+  color:#3a87ad;
+  font-weight:bold;
+  text-shadow:unset;
+}
+.dropdown-menu a:hover {
+
+    color: #adb1b1;
+    background: transparent;
+    border-radius:2px;
+}
+#ConfigData > div > div > table > tbody > tr > td>.btn{
+  background:#414141;
+  color:#adb1b1;
+  text-shadow:unset;
+  font-weight:bold;
+}
+#Config_Save:hover{
+  background-color:#ad292c;
+  color:#adb1b1;
+}
+#Notif_History_Select{
+  background:#2c2c2c;
+  border:1px solid #2c2c2c;
+  color:#adb1b1;
+
 }

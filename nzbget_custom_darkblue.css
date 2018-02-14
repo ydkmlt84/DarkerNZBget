@@ -363,6 +363,34 @@ border: 1px solid #2c2c2c;
 #DownloadsTable > tbody > tr > td:nth-child(7) > div > div.progress.progress-striped.progress-success{
   background-color:transparent;
 }
+.table tbody tr.checked, .table tbody tr.checked td{
+  background:#414141;
+  color:white;
+}
+.table tbody tr.checked a, .table tbody tr.checked td a{
+  color:white;
+}
+.table tbody tr.checked:hover, .table tbody tr.checked:hover td{
+  background:rgba(87,87,87,.9);
+  color:white;
+}
+.table tbody tr.checked:hover a, .table tbody tr.checked:hover td a{
+  color:white;
+}
+.table tbody tr.checked:nth-child(even), .table tbody tr.checked:nth-child(even) td{
+  background:#414141;
+  color:white;
+}
+.table tbody tr.checked:nth-child(even) a, .table tbody tr.checked:nth-child(even) td a{
+  color:white;
+}
+.table tbody tr.checked:hover, .table tbody tr.checked:hover td{
+  background:rgba(87,87,87,.9);
+  color:white;
+}
+.table tbody tr.checked:hover a, .table tbody tr.checked:hover td a{
+  color:white;
+}
 .pagination a {
   color:#adb1b1;
   border:unset;

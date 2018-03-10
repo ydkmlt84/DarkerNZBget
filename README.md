@@ -23,6 +23,6 @@ a reverse proxy block in NGINX to apply.
 <br>
 <b> Screenshots</b>
 </br>
-<img src="https://i.imgur.com/tXFSyAw.png"></img>
+<img src="https://i.imgur.com/rxXM2Wy.png"></img>
 <br>
-<img src="https://i.imgur.com/oSichzz.png"></img>
+<img src="https://i.imgur.com/c4qNczJ.png"></img>

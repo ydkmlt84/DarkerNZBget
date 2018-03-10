@@ -767,3 +767,6 @@ div.toolbox-length select {
   border:0px;
   color:#adb1b1;
 }
+::selection{
+  background:#3a87adcf;
+}

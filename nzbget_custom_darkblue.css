@@ -216,9 +216,6 @@ tr.checked, tr.checked td, tr.checked:nth-child(odd) .progress {
     border:0px;
     background:#2c2c2c
 }
-.modal .input-xlarge::selection {
-    background:#adb1b1;
-}
 #HistoryEdit_Category{
   background:#2c2c2c;
   color:white;

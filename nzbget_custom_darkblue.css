@@ -767,3 +767,9 @@ div.toolbox-length select {
 ::selection{
   background:#3a87adcf;
 }
+table.datatable > tbody > tr:hover{
+  background:#414141;
+}
+.table tbody tr:hover, .table tbody tr:hover td, .table tbody tr:hover a  {
+    color:white;
+}

@@ -732,6 +732,9 @@ div.toolbox-length select {
 #PriorityMenu > li > a > table > tbody{
   border:0px;
 }
+#HistoryCategoryMenu > li > a > table > tbody{
+  border:0px;
+}
 #PriorityMenu{
   background:#2c2c2c;
   color:#adb1b1;
@@ -772,4 +775,10 @@ table.datatable > tbody > tr:hover{
 }
 .table tbody tr:hover, .table tbody tr:hover td, .table tbody tr:hover a  {
     color:white;
+}
+#MessagesTable > tbody > tr:hover{
+  background:transparent;
+}
+#MessagesTable > tbody > tr:hover td{
+  color:#adb1b1;
 }

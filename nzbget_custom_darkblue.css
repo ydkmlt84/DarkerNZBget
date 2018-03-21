@@ -6,7 +6,6 @@ background-repeat: no-repeat;
 background-attachment: fixed;
 background-position: top;
 color:#adb1b1 !important;
-text-transform: uppercase;
 }
 body::-webkit-scrollbar {
   width:.6em;

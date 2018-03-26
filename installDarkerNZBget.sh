@@ -7,6 +7,8 @@ backupfile="~/Documents/stocknzbgetcss/stylebackup.css"
 DarkerNZBgetCSS="nzbget_custom_darkblue.css"
 #Change the <stockcss> location below to where your nzbget is installed to.
 stockcss="/opt/nzbget/webui/style.css"
+cat art.txt
+exit
 cd ~/Documents
 mkdir "$backuplocation"
 cp "$stockcss" "$backuplocation"/stylebackup.css

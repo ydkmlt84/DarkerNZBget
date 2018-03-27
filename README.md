@@ -2,8 +2,7 @@
 [![Discord](https://img.shields.io/badge/Chat-Discord-738bd7.svg?style=for-the-badge)](https://discord.gg/fKcCXwb)<br>
 Custom CSS to apply to NZBget using an NGINX subfilter
 
-As far as I know, a NGINX sub filter is the only way to apply this to NZBget. Below is one example of how to use
-a reverse proxy block in NGINX to apply.
+Using a NGINX sub filter is the only way to apply this specific branch of the repo to NZBget. Below, is one example, of how to use a reverse proxy block in NGINX to apply. If you're looking for a different/better way, go to the [Develop](https://github.com/ydkmlt84/DarkerNZBget/tree/develop) branch and read the README over there.
 ```
 #NZBGet ReverseProxy
         location /nzbget {
@@ -19,7 +18,6 @@ a reverse proxy block in NGINX to apply.
 ```
 <br>
 <i>Rawgit link for master branch = https://rawgit.com/ydkmlt84/DarkerNZBget/master/nzbget_custom_darkblue.css</i></br>
-<i>Rawgit link for develop branch = https://rawgit.com/ydkmlt84/DarkerNZBget/develop/nzbget_custom_darkblue.css</i>
 <br>
 <b> Screenshots</b>
 </br>

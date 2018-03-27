@@ -16,9 +16,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-/* Import different font for DarkerNZBGet */
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
-/*Font Import Complete*/
 body {
 	padding-left: 0;
 	padding-right: 0;

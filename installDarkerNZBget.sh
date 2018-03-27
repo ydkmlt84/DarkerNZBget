@@ -1,54 +1,44 @@
 #!/bin/bash
-#The below <backuplocation> is where your stock CSS will be backed up to. Change it if you'd like. :)
-backuplocation="~/Documents/stocknzbgetcss/"
-backupfile="~/Documents/stocknzbgetcss/(date +"%Y_%m_%d_%I_%M_%p")-stylebackup.css"
+#The below <backupfile> is the name of the backup for your stock CSS. Change it if you'd like. :)
+backupfile="($(date +"%Y%m%d-%I:%M%p"))-stylebackup.css"
 #This is the name of the CSS file. Do not change.
 DarkerNZBgetCSS="nzbget_custom_darkblue.css"
-#Change the <stockcss> location below to where your nzbget is installed to.
-stockcss="/opt/nzbget"
+#Change the <nzbgetdir> location below to where your nzbget is installed to.
+nzbgetdir="/opt/nzbget"
 #The start of actually doing something with the script
 cat Misc/art.txt
-if [ -d "$backuplocation" ];
+if [ -d "$nzbgetdir"/webui ];
   then
-    cp "$stockcss"/webui/style.css "$backupfile"
+    sudo mkdir -p "$nzbgetdir"/webui/CSSbackups
   else
-    mkdir "$backuplocation"
+    echo "There was a problem with creating the backup directory. Please make sure the nzbgetdir location is correct. Exiting"
+      exit
 fi
-if [ -d "$backuplocation"];
+sleep 2
+sudo cp "$nzbgetdir"/webui/style.css "$nzbgetdir"/webui/CSSbackups/"$backupfile"
+if [ -f "$nzbgetdir"/webui/CSSbackups/"$backupfile" ];
   then
-    cp "$stockcss"/webui/style.css "$backupfile"
-  else
-    echo "Could not make new directory at '$backuplocation'. Exiting"
-      sleep 2
-        exit
-fi
-if [ -f "$backupfile" ];
-  then
-    echo "Backup of stock CSS created at '$backupfile'"
+    echo "Backup of stock CSS created at "$nzbgetdir"/webui/CSSbackups/"$backupfile""
   else
     echo "Could not create a backup of the stock CSS file. Exiting"
         sleep 2
     exit
 fi
 sleep 3
-          #echo "I am now in the ~/Documents folder, and downloading the custom css."
-          #wget -q https://rawgit.com/ydkmlt84/DarkerNZBget/develop/nzbget_custom_darkblue.css
-          #sleep 3
-          #echo "File downloaded...now to copy it to the nzbget location."
 
 #  We verified the backup was created in a step before so we will remove the stock CSS file and
 #  prepare to copy the new file to the stockcss location.
 echo "Inserting the DarkerNZBget CSS now..."
-rm "$stockcss"/webui/style.css
-sudo cp "$DarkerNZBgetCSS" "$stockcss"/webui/style.css
+sudo rm "$nzbgetdir"/webui/style.css
+sudo cp "$DarkerNZBgetCSS" "$nzbgetdir"/webui/style.css
 sleep 3
 
 #Checking to make sure all is well. Almost done.
-if [ -f "$stockcss" ];
+if [ -f "$nzbgetdir"/webui/style.css ];
   then
       echo "DarkerNZBget has been installed. Now to clean up the mess a little bit."
   else
-      echo "We got so close...we had trouble moving the new theme into '$stockcss'. Exiting."
+      echo "We got so close...we had trouble moving the new theme into "$nzbgetdir"/webui. Exiting."
         exit
 fi
 sleep 4

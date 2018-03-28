@@ -3611,3 +3611,13 @@ table.datatable > tbody > tr:hover{
 #MessagesTable > tbody > tr:hover td{
   color:#adb1b1;
 }
+#InfoDialog > div.modal-header > h3::after {
+  content: "DarkerNZBget- 0.01";
+  font-size:12px;
+  background-color:#3a87ad;
+  margin:8px;
+  vertical-align:middle;
+  color:white;
+  padding:5px;
+  border-radius:4px;
+}

@@ -1,11 +1,15 @@
 #!/usr/bin/env bash
 #
 # DarkerNZBGet theme installer
+#
+# v1.1.3 - 03/28/2018 - Added cleanup functionality and made some functions more efficient.
+# v1.1.2 - 03/28/2018 - Added additional options checks.
 # v1.1.1 - 03/27/2018 - Added functionality to ensure provided Docker container exists on the Server.
 # v1.1.0 - 03/27/2018 - Added functionality to install theme to Docker containers.
 # v1.0.0 - 03/26/2018 - The original.
-# Tronyx
 #
+# Created by: Tronyx
+
 # Determine if user is root and, if not, tell them to use sudo
 if [ "$EUID" -ne 0 ]; then
   echo "Please run the script as root or use sudo when executing this script..."
@@ -13,34 +17,61 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 # Define local install or Docker container options
+function usage {
+  cat <<EOM
+~*DarkerNZBGet Theme Installer*~
+
+Usage: $(basename "$0") [OPTION]...
+
+-i VALUE    Install type:
+            -i local
+            -i docker
+
+-c VALUE    Docker container name
+            -c nzbget
+
+-h          Display usage
+
+Specfify the Nzbget installation type with the -i option:
+Local install: sudo ./install.sh -i local
+Docker container: sudo ./install.sh -i docker
+If you specify Docker, you must provide the Nzbget container name.
+Provide the Docker container name with the -c option:
+Container called nzbget: sudo ./install.sh -i docker -c nzbget
+EOM
+
+exit 2
+}
+
 while getopts "hi:c:" OPTION
   do
   case "$OPTION" in
-    h)
-      echo "~*DarkerNZBGet Theme Installer*~"
-      echo "Specfify the Nzbget installation type with the -i option:"
-      echo "Local install: sudo ./DarkerNZBget_Installer.sh -i local"
-      echo "Docker container: sudo ./DarkerNZBget_Installer.sh -i docker"
-      echo "If you specify Docker, you must provide the Nzbget container name."
-      echo "Provide the Docker container name with the -c option:"
-      echo "Container called nzbget: sudo ./DarkerNZBget_Installer.sh -i docker -c nzbget"
-      ;;
     i)
       installType="$OPTARG"
       ;;
     c)
       dockerContainer="$OPTARG"
       ;;
-    \?)
-      echo "Invalid option: -$OPTARG"
-      exit 1
-      ;;
     :)
       echo "Option -$OPTARG requires an argument."
       exit 1
       ;;
+    h|*)
+      usage
+      ;;
   esac
 done
+
+if [[ $1 == "" ]]; then
+  usage
+  exit 1
+elif ! [[ "$installType" =~ ^(local|docker)$  ]]; then
+  usage
+  exit 1
+elif [[ "$installType" == "docker" && "$dockerContainer" == "" ]]; then
+  usage
+  exit 1
+fi
 
 # Determine if provided Docker container name is valid
 function validate_container {
@@ -141,20 +172,27 @@ function install_theme {
   fi
 }
 
+# Cleanup downloaded and extracted dirs and files
+function cleanup {
+  echo "Tidying some things up..."
+  rm -rf /tmp/DarkerNZBget* /tmp/containers_list.txt
+}
+
 # Verify the DarkerNZBget CSS has been installed and display corresponding message(s)
 function validate_install {
+  echo "Validating that the DarkerNZBget theme was installed..."
   if [[ "${installType}" = "local" ]]; then
-    if grep -q TYh5E3n "${nzbgetDir}webui/style.css"; then
+    if grep -q DarkerNZBget "${nzbgetDir}webui/style.css"; then
       echo "The DarkerNZBget theme has been successfully installed!"
       echo "Please refresh your browser window/tab to see the new theme."
     else
       echo "The DarkerNZBget theme has NOT been installed!"
     fi
   elif [[ "${installType}" = "docker" ]]; then
-    if docker exec "${dockerContainer}" grep -q TYh5E3n app/nzbget/webui/style.css; then
+    if docker exec "${dockerContainer}" grep -q DarkerNZBget app/nzbget/webui/style.css; then
       echo "The DarkerNZBget theme has been successfully installed!"
       echo "Please refresh your browser window/tab to see the new theme."
-      echo "NOTE: You may need to run this script every time the Docker image gets updated!"
+      echo "NOTE: You will need to run this script every time you recreate the container!"
     else
       echo "The DarkerNZBget theme has NOT been installed!"
     fi
@@ -166,17 +204,13 @@ if [[ "${installType}" = "local" ]]; then
   package_manager
   get_nzb_dir
   install_packages
-  grab_archive
-  display_banner
-  backup
-  install_theme
-  validate_install
 elif [[ "${installType}" = "docker" ]]; then
   validate_container
-  grab_archive
-  display_banner
   get_appdata_dir
-  backup
-  install_theme
-  validate_install
 fi
+grab_archive
+display_banner
+backup
+install_theme
+cleanup
+validate_install

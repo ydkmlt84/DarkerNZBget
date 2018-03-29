@@ -2,6 +2,7 @@
 #
 # DarkerNZBGet theme installer
 #
+
 # v1.2.0 - 03/28/2018 - Added icon color prompt option and code to copy over the corresponding PNG file.
 # v1.1.3 - 03/28/2018 - Added cleanup functionality and made some functions more efficient.
 # v1.1.2 - 03/28/2018 - Added additional options checks.
@@ -73,6 +74,7 @@ elif [[ "$installType" == "docker" && "$dockerContainer" == "" ]]; then
   usage
   exit 1
 fi
+
 
 # Prompt user to choose black or white icons and validate correct options
 function choose_color {

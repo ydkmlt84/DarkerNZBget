@@ -6,7 +6,7 @@ For anyone who doesn't use NGINX, but uses Linux, the script [install.sh](https:
 
 Here's the usage that gets displayed when the script is executed with no options:
 
-```sh
+```python
 [tronyx@suladan ~]# sudo ./install.sh
 ~*DarkerNZBGet Theme Installer*~
 

@@ -2,6 +2,8 @@
 #
 # DarkerNZBGet theme installer
 #
+
+# v1.2.0 - 03/28/2018 - Added icon color prompt option and code to copy over the corresponding PNG file.
 # v1.1.3 - 03/28/2018 - Added cleanup functionality and made some functions more efficient.
 # v1.1.2 - 03/28/2018 - Added additional options checks.
 # v1.1.1 - 03/27/2018 - Added functionality to ensure provided Docker container exists on the Server.
@@ -73,6 +75,18 @@ elif [[ "$installType" == "docker" && "$dockerContainer" == "" ]]; then
   exit 1
 fi
 
+
+# Prompt user to choose black or white icons and validate correct options
+function choose_color {
+  read -p 'Which icon color do you want? ([w]hite or [b]lack): ' color
+  if ! [[ "$color" =~ ^(black|b|white|w)$  ]]; then
+    echo "Please specify black, b, white, or w."
+    read -p 'Which icon color do you want? ([w]hite or [b]lack): ' color
+  else
+    :
+  fi
+}
+
 # Determine if provided Docker container name is valid
 function validate_container {
   docker ps --format '{{.Names}}' > /tmp/containers_list.txt
@@ -130,44 +144,68 @@ function display_banner {
   cat /tmp/DarkerNZBget-develop/Misc/art.txt
 }
 
-# Create backup dir and make a backup of the existing style.css file
+# Create backup dir and make a backup of the existing style.css and icons.png files
 function backup {
-  echo "Backing up the original style.css file..."
+  echo "Backing up the original style.css and icons.png files..."
   if [[ "${installType}" = "local" ]]; then
     if [ ! -d "${nzbgetDir}webui/backup" ]; then
       mkdir -p "${nzbgetDir}webui/backup"
       yes |cp -rf "${nzbgetDir}webui/style.css" "${nzbgetDir}webui/backup/style.css.original"
+      yes |cp -rf "${nzbgetDir}webui/img/icons.png" "${nzbgetDir}webui/backup/icons.png.original"
     else
       :
     fi
   elif [[ "${installType}" = "docker" ]]; then
     mkdir -p "${appDataDir}"/backup
     docker cp "${dockerContainer}":/app/nzbget/webui/style.css "${appDataDir}"/backup/style.css.original
+    docker cp "${dockerContainer}":/app/nzbget/webui/img/icons.png "${appDataDir}"/backup/icons.png.original
   fi
 }
 
-# Install the DarkerNZBget CSS
+# Install the DarkerNZBget CSS and icons.png files
 function install_theme {
-  echo "Installing the custom CSS file..."
+  echo "Installing the custom CSS and icons files..."
   if [[ "${installType}" = "local" ]]; then
-    if [ ! -f "${nzbgetDir}webui/backup/style.css.original" ]; then
-      echo "Whoops.. Somehow the stock style.css file didn't get backed up..."
+    if [[ -f "${nzbgetDir}webui/backup/style.css.original" && -f "${nzbgetDir}webui/backup/icons.png.original" ]]; then
+      echo "Whoops.. Somehow the stock files didn't get backed up..."
       echo "Let's try that again..."
       yes |cp -rf "${nzbgetDir}webui/style.css" "${nzbgetDir}webui/backup/style.css.original"
-      echo "Installing the custom CSS file...again..."
+      yes |cp -rf "${nzbgetDir}webui/img/icons.png" "${nzbgetDir}webui/backup/icons.png.original"
+      echo "Installing the custom CSS and icons files...again..."
       yes |cp -rf /tmp/DarkerNZBget-develop/nzbget_custom_darkblue.css "${nzbgetDir}webui/style.css"
+        if [[ "${color}" =~ ^(black|b)$ ]]; then
+          yes |cp -rf /tmp/DarkerNZBget-develop/Misc/black_icons.png "${nzbgetDir}webui/img/icons.png"
+        elif [[ "${color}" =~ ^(white|w)$ ]]; then
+          yes |cp -rf /tmp/DarkerNZBget-develop/Misc/white_icons.png "${nzbgetDir}webui/img/icons.png"
+        fi
     else
       yes |cp -rf /tmp/DarkerNZBget-develop/nzbget_custom_darkblue.css "${nzbgetDir}webui/style.css"
+      if [[ "${color}" =~ ^(black|b)$ ]]; then
+        yes |cp -rf /tmp/DarkerNZBget-develop/Misc/black_icons.png "${nzbgetDir}webui/img/icons.png"
+      elif [[ "${color}" =~ ^(white|w)$ ]]; then
+        yes |cp -rf /tmp/DarkerNZBget-develop/Misc/white_icons.png "${nzbgetDir}webui/img/icons.png"
+      fi
     fi
   elif [[ "${installType}" = "docker" ]]; then
-    if [ ! -f "${appDataDir}/backup/style.css.original" ]; then
-      echo "Whoops.. Somehow the stock style.css file didn't get backed up..."
+    if [[ ! -f "${appDataDir}/backup/style.css.original" ]]; then
+      echo "Whoops.. Somehow the stock files didn't get backed up..."
       echo "Let's try that again..."
       docker cp "${dockerContainer}":/app/nzbget/webui/style.css "${appDataDir}"/backup/style.css.original
-      echo "Installing the custom CSS file...again..."
+      docker cp "${dockerContainer}":/app/nzbget/webui/img/icons.png "${appDataDir}"/backup/icons.png.original
+      echo "Installing the custom CSS and icons files...again..."
       docker cp /tmp/DarkerNZBget-develop/nzbget_custom_darkblue.css "${dockerContainer}":/app/nzbget/webui/style.css
+      if [[ "${color}" =~ ^(black|b)$ ]]; then
+        docker cp /tmp/DarkerNZBget-develop/Misc/black_icons.png "${dockerContainer}":/app/nzbget/webui/img/icons.png
+      elif [[ "${color}" =~ ^(white|w)$ ]]; then
+        docker cp /tmp/DarkerNZBget-develop/Misc/white_icons.png "${dockerContainer}":/app/nzbget/webui/img/icons.png
+      fi
     else
       docker cp /tmp/DarkerNZBget-develop/nzbget_custom_darkblue.css "${dockerContainer}":/app/nzbget/webui/style.css
+      if [[ "${color}" =~ ^(black|b)$ ]]; then
+        docker cp /tmp/DarkerNZBget-develop/Misc/black_icons.png "${dockerContainer}":/app/nzbget/webui/img/icons.png
+      elif [[ "${color}" =~ ^(white|w)$ ]]; then
+        docker cp /tmp/DarkerNZBget-develop/Misc/white_icons.png "${dockerContainer}":/app/nzbget/webui/img/icons.png
+      fi
     fi
   fi
 }
@@ -200,6 +238,7 @@ function validate_install {
 }
 
 # Execute functions
+choose_color
 if [[ "${installType}" = "local" ]]; then
   package_manager
   get_nzb_dir

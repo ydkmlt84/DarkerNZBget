@@ -2,7 +2,7 @@
 #
 # DarkerNZBGet theme installer
 #
-
+# Version history
 # v1.2.0 - 03/28/2018 - Added icon color prompt option and code to copy over the corresponding PNG file.
 # v1.1.3 - 03/28/2018 - Added cleanup functionality and made some functions more efficient.
 # v1.1.2 - 03/28/2018 - Added additional options checks.

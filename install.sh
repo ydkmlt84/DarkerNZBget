@@ -12,12 +12,10 @@
 # Created by: Tronyx
 
 # Determine if user is root and, if not, tell them to use sudo
-function root_check {
-  if [ "$EUID" -ne 0 ]; then
-    echo "Please run the script as root or use sudo when executing this script..."
-    exit
-  fi
-}
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run the script as root or use sudo when executing this script..."
+  exit
+fi
 
 # Define local install or Docker container options
 function usage {
@@ -135,7 +133,8 @@ function install_packages {
 # Grab the Darker Nzbget theme CSS archive and extract it
 function grab_archive {
   echo "Downloading and extracting the Darker Nzbget theme CSS archive..."
-  wget -q -O /tmp/DarkerNZBget.zip https://github.com/ydkmlt84/DarkerNZBget/archive/develop.zip
+  #wget -q -O /tmp/DarkerNZBget.zip https://github.com/ydkmlt84/DarkerNZBget/archive/develop.zip
+  wget -q -O /tmp/DarkerNZBget.zip https://github.com/christronyxyocum/DarkerNZBget/archive/develop.zip
   unzip -qq -o /tmp/DarkerNZBget.zip -d /tmp/
 }
 
@@ -238,7 +237,6 @@ function validate_install {
 }
 
 # Execute functions
-root_check
 choose_color
 if [[ "${installType}" = "local" ]]; then
   package_manager

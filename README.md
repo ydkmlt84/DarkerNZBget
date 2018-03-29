@@ -2,7 +2,9 @@
 [![Discord](https://img.shields.io/badge/Chat-Discord-738bd7.svg?style=for-the-badge)](https://discord.gg/fKcCXwb)<br>
 Custom CSS to apply to NZBget.
 
-For anyone who doesn't use NGINX, but uses Linux, the script [install.sh](https://github.com/ydkmlt84/DarkerNZBget/blob/develop/install.sh) is now included. Using Linux, download the script, give it execute permissions with `chmod +x install.sh`, and then run the script and follow any prompts/instructions.
+For anyone who doesn't use NGINX, but uses Linux, the script [install.sh](https://github.com/ydkmlt84/DarkerNZBget/blob/develop/install.sh) is now included. Using Linux, download the script using `wget`, IE: `wget https://github.com/ydkmlt84/DarkerNZBget/blob/develop/install.sh`, give it execute permissions with `chmod +x install.sh`, and then run the script and follow any prompts/instructions.
+
+Here's the usage that gets displayed when the script is executed with no options:
 
 ```bash
 [tronyx@suladan ~]# sudo ./install.sh

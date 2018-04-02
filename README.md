@@ -31,7 +31,7 @@ Container called nzbget: sudo ./install.sh -i docker -c nzbget
 ```
 
 ### NZBget Docker Container Install
-Here's an example run of the script with a local install:
+Here's an example run of the script with an NZBget Docker Container install:
 
 ```
 [tronyx@suladan ~]$ sudo ./install.sh -i docker -c nzbget
@@ -57,7 +57,7 @@ NOTE: You will need to run this script every time you recreate the container!
 ```
 
 ### Local NZBget Install
-Here's an example run of the script with a Docker install:
+Here's an example run of the script with a local NZBget install:
 
 ```
 tronyx@autobot:~$ sudo ./install.sh -i local

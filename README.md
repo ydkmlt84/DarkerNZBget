@@ -30,7 +30,7 @@ Provide the Docker container name with the -c option:
 Container called nzbget: sudo ./install.sh -i docker -c nzbget
 ```
 
-### Local NZBget Install
+### NZBget Docker Container Install
 Here's an example run of the script with a local install:
 
 ```
@@ -56,7 +56,7 @@ Please refresh your browser window/tab to see the new theme.
 NOTE: You will need to run this script every time you recreate the container!
 ```
 
-### NZBget Docker Container
+### Local NZBget Install
 Here's an example run of the script with a Docker install:
 
 ```

@@ -95,8 +95,8 @@ More scripts for different OSes hopefully coming soon.
 
 ## Screenshots
 </br>
-<img src="https://i.imgur.com/0M2aAeG.png"></img>
+<img src="https://i.imgur.com/BCcVIZN.png"></img>
 <br>
-<img src="https://i.imgur.com/mAPnA9a.png"></img>
+<img src="https://i.imgur.com/eIURD9y.png"></img>
 <br>
-<img src="https://i.imgur.com/n8b9UOn.png"></img>
+<img src="https://i.imgur.com/ODiEDDw.png"></img>

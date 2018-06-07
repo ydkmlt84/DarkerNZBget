@@ -3613,7 +3613,7 @@ table.datatable > tbody > tr:hover{
   color:#adb1b1;
 }
 #InfoDialog > div.modal-header > h3::after {
-  content: "DarkerNZBget- 0.01";
+  content: "DarkerNZBget- 0.2";
   font-size:12px;
   background-color:#3a87ad;
   margin:8px;

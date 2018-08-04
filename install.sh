@@ -118,7 +118,8 @@ function package_manager {
 
 # Determine Nzbget install location and set it as a variable
 function get_nzb_dir {
-  nzbgetDir=$(locate nzbget |grep conf |head -1 |rev |cut -c12-50 |rev)
+  #nzbgetDir=$(locate nzbget |grep conf |head -1 |rev |cut -c12-50 |rev)
+  nzbgetDir=$(ps aux |grep -v grep |grep nzbget |awk '{print $11}' |cut -c1-12)
 }
 
 # Determine Docker AppData dir for NZBget container

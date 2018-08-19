@@ -16,6 +16,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
+
 body {
 	padding-left: 0;
 	padding-right: 0;
@@ -3612,7 +3613,7 @@ table.datatable > tbody > tr:hover{
   color:#adb1b1;
 }
 #InfoDialog > div.modal-header > h3::after {
-  content: "DarkerNZBget- 0.01";
+  content: "DarkerNZBget- 0.2";
   font-size:12px;
   background-color:#3a87ad;
   margin:8px;

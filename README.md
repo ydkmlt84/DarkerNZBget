@@ -7,7 +7,7 @@ For anyone who doesn't necessarily use Nginx, but uses Linux, a new [install.sh]
 ## Examples
 Here's the usage that gets displayed when the script is executed with no options:
 
-```
+```bash
 [tronyx@suladan ~]# sudo ./install.sh
 ~*DarkerNZBGet Theme Installer*~
 
@@ -33,7 +33,7 @@ Container called nzbget: sudo ./install.sh -i docker -c nzbget
 ### NZBget Docker Container Install
 Here's an example run of the script with an NZBget Docker Container install:
 
-```
+```bash
 [tronyx@suladan ~]$ sudo ./install.sh -i docker -c nzbget
 [sudo] password for tronyx:
 Which icon color do you want? ([w]hite or [b]lack): b
@@ -59,7 +59,7 @@ NOTE: You will need to run this script every time you recreate the container!
 ### Local NZBget Install
 Here's an example run of the script with a local NZBget install:
 
-```
+```bash
 tronyx@autobot:~$ sudo ./install.sh -i local
 [sudo] password for tronyx:
 Which icon color do you want? ([w]hite or [b]lack): b
@@ -99,4 +99,4 @@ More scripts for different OSes hopefully coming soon.
 <br>
 <img src="https://i.imgur.com/eIURD9y.png"></img>
 <br>
-<img src="https://i.imgur.com/ODiEDDw.png"></img>
+<img src="https://i.imgur.com/eQ7M3wD.png"></img>

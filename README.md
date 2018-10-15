@@ -99,4 +99,4 @@ More scripts for different OSes hopefully coming soon.
 <br>
 <img src="https://i.imgur.com/eIURD9y.png"></img>
 <br>
-<img src="https://i.imgur.com/ODiEDDw.png"></img>
+<img src="https://i.imgur.com/eQ7M3wD.png"></img>
